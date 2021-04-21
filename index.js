@@ -1,4 +1,3 @@
-const { createRequestHandler } = require("@remix-run/vercel");
-module.exports = createRequestHandler({
-  build: require("./build")
-});
+module.exports = (req, res) => {
+  res.status(200).end();
+};
